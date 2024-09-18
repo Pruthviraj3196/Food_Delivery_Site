@@ -36,6 +36,10 @@ function App() {
 
     menuCard.forEach((n) => n.addEventListener("click", setMenuCardActive));
   },[isMainData]);
+//  set main dish items on filter
+  const setData = (itemId) => {
+    setMainData(Items.filter((element) => element.itemId == itemId));
+  };
 
   return (
     <div className="App">
@@ -62,7 +66,7 @@ function App() {
             {
               MenuItems && MenuItems.map(data => (
 
-                <div key={data.id}>
+                <div key={data.id} onClick={() => setData(data.itemId)}>
                 <MenuCard  imgSrc={data.imgSrc} 
                 name={data.name} 
                 isActive = {data.id === 1 ? true: false}
