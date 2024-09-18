@@ -4,6 +4,8 @@ import Header from './Components/Header';
 import MenuConatiner from './Components/MenuConatiner';
 import { useEffect } from 'react';
 import BannerName from './Components/BannerName';
+import SubMenuContainer from './Components/SubMenuContainer';
+import MenuCard from './Components/MenuCard';
 
 function App() {
 
@@ -35,8 +37,20 @@ function App() {
         </div>
         {/* dishContainer */}
         <div className='dishContainer'>
-          <div className='menuCard'></div>
-          <div className='rowContainer'></div>
+          <div className='menuCard'>
+            <SubMenuContainer name={"Menu Category"}/>
+          </div>
+          <div className='rowContainer'>
+            <div>
+              <MenuCard  imgSrc={
+                'https://img.freepik.com/free-photo/tasty-burger-isolated-white-background-fresh-hamburger-fastfood-with-beef-cheese_90220-1063.jpg?size=626&ext=jpg&ga=GA1.1.461123725.1699331816&semt=ais_hybrid'
+              } 
+              name={"Burger"} 
+              isActive
+              />
+            </div>
+            
+          </div>
           <div className='dishitenContainer'></div>
         </div>
       </div>
