@@ -274,7 +274,7 @@
     width: 100%;
     height: 130px;
     border-radius: 10px;
-    background: url("https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fbanner.png?alt=media&token=7e244d84-8821-477d-b273-4c9381a474fb")
+    background: url("https://image.slidesdocs.com/responsive-images/background/illustrative-3d-render-featuring-a-phone-food-and-an-order-button-ideal-for-promoting-online-food-delivery-services-powerpoint-background_707bc4e388__960_540.jpg")
       no-repeat center;
     background-size: cover;
     position: relative;
@@ -307,12 +307,12 @@
   .bannerContent p {
     font-size: 14px;
     width: 200px;
-    color: #989594;
+    color: #5223c9;
     margin: 5px 0;
   }
   
   .bannerContent p span {
-    color: #f8901c;
+    color: #7c0505;
     font-weight: 500;
   }
   

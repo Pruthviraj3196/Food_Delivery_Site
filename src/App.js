@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Components/Header';
 import MenuConatiner from './Components/MenuConatiner';
 import { useEffect } from 'react';
+import BannerName from './Components/BannerName';
 
 function App() {
 
@@ -23,13 +24,28 @@ function App() {
       <Header/>
      {/* Main Container */}
      <main>
-      <div className='mainContainer'></div>
+      <div className='mainContainer'>
+        {/* Banner */}
+        <div className='banner'>
+          <BannerName name={"Pruthvi"} discount={"20"} link={"#"} />
+          <img src='https://thumb.ac-illust.com/79/79d12b64ac271a9b94b86406d4ba21cd_t.jpeg'
+           alt='Deliver.png'
+           className='deliveryPic'
+           />
+        </div>
+        {/* dishContainer */}
+        <div className='dishContainer'>
+          <div className='menuCard'></div>
+          <div className='rowContainer'></div>
+          <div className='dishitenContainer'></div>
+        </div>
+      </div>
       <div className='rightMenu'></div>
      </main>
      {/* Bottom menu */}
      <div className='leftMenu'>
       <ul id='menu'>
-        <MenuConatiner link={'#'} icon = {<HomeRounded />} />
+        <MenuConatiner link={'#'} icon = {<HomeRounded />} isHome/>
         <MenuConatiner link={'#'} icon = {<Chat />} />
         <MenuConatiner link={'#'} icon = {<AccountBalanceWalletRounded />} />
         <MenuConatiner link={'#'} icon = {<Favorite />} />
