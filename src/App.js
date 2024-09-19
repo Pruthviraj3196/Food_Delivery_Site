@@ -8,6 +8,8 @@ import SubMenuContainer from './Components/SubMenuContainer';
 import MenuCard from './Components/MenuCard';
 import {MenuItems, Items} from "./Components/Data";
 import ItemCard from './Components/ItemCard';
+import DebitCard from './Components/DebitCard';
+import CartItem from './Components/CartItem';
 
 function App() {
   
@@ -94,7 +96,27 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='rightMenu'></div>
+      <div className='rightMenu'>
+        <div className='debitCardContainer'>
+            <div className='debitCard'>
+              <DebitCard />
+            </div>
+        </div>
+        <div className='cartCheckOutContianer'>
+          <SubMenuContainer name={"carts Items"}/>
+          <div className='cartContainer'>
+  
+            <div className='cartItems'>
+              <CartItem 
+                 name={'baurger bristro'}
+                 imgSrc={'https://img.freepik.com/free-psd/fresh-beef-burger-isolated-transparent-background_191095-9018.jpg?size=626&ext=jpg&ga=GA1.1.461123725.1699331816&semt=ais_hybrid'}
+                 qty={'4'}
+                 price= {'7.95'}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
      </main>
      {/* Bottom menu */}
      <div className='leftMenu'>
