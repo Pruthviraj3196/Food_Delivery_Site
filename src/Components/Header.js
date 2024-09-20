@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BarChart, SearchRounded, ShoppingCartRounded } from '@mui/icons-material';
 
 const Header = () => {
+
+    useEffect(() => {
+        const toggleIcon = document.querySelector(".toggleMenu");
+
+        toggleIcon.addEventListener('click', () => {
+            document.querySelector('.rightMenu').classList.toggle('active')
+        })
+    },[]);
+
   return (
     <header>
         <img src='https://image.similarpng.com/very-thumbnail/2020/08/Nature-food-Logo-on-transparent-background-PNG.png' 
